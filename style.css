@@ -1,0 +1,603 @@
+html {
+  height: 100%;
+  background: 50% 50% no-repeat
+    url('data:image/svg+xml,<svg viewBox="-20 -5 60 40" width="140" xmlns="http://www.w3.org/2000/svg" opacity="0.2"><path d="M1 8l11-7 11 7v8l-11 7-11-7zm0 0l11 8 11-8m0 8L12 8 1 16M12 1v7m0 8v7" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/><text x="-12" y="32" font-size="5" font-family="monospace" fill="currentColor">Built on CodePen</text></svg>');
+}
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #26352b;
+  background: #f7f4ec;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   NAVIGATIE
+========================= */
+
+header {
+  background: #f7f4ec;
+}
+
+nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 25px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #31543b;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #26352b;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #567b5d;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  max-width: 1200px;
+  margin: auto;
+
+  padding: 75px 30px 100px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 65px;
+
+  align-items: center;
+}
+
+.small-title {
+  color: #8a6a3f;
+
+  font-size: 13px;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 12px;
+}
+
+.hero h1 {
+  font-family: Georgia, serif;
+
+  font-size: 62px;
+
+  line-height: 1.08;
+
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  display: block;
+  color: #567b5d;
+}
+
+.hero-text > p:not(.small-title) {
+  max-width: 520px;
+
+  font-size: 18px;
+
+  color: #5e6961;
+
+  margin-bottom: 30px;
+}
+
+
+/* KNOP */
+
+.button {
+  display: inline-block;
+
+  background: #567b5d;
+
+  color: white;
+
+  padding: 15px 25px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  transition: 0.25s;
+}
+
+.button:hover {
+  background: #3e6046;
+
+  transform: translateY(-2px);
+}
+
+
+/* HERO AFBEELDING */
+
+.hero-image {
+  background: white;
+
+  border-radius: 20px;
+
+  padding: 25px;
+
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
+}
+
+.hero-image img {
+  width: 100%;
+
+  height: 430px;
+
+  object-fit: contain;
+}
+
+
+/* =========================
+   OVER HET GOEDE DOEL
+========================= */
+
+.about {
+  background: #e7ede3;
+
+  padding: 90px 10%;
+
+  display: grid;
+
+  grid-template-columns: 1.5fr 1fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+.about h2,
+.product-section h2,
+.order h2 {
+  font-family: Georgia, serif;
+
+  font-size: 42px;
+
+  line-height: 1.15;
+
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 650px;
+
+  color: #5e6961;
+
+  margin-bottom: 18px;
+}
+
+.text-link {
+  color: #567b5d;
+
+  font-weight: bold;
+
+  text-decoration: none;
+}
+
+.about-card {
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.about-card .icon {
+  font-size: 45px;
+
+  margin-bottom: 12px;
+}
+
+.about-card h3 {
+  font-family: Georgia, serif;
+
+  font-size: 25px;
+
+  margin-bottom: 8px;
+}
+
+
+/* =========================
+   PRODUCT
+========================= */
+
+.product-section {
+  max-width: 1200px;
+
+  margin: auto;
+
+  padding: 100px 30px;
+
+  text-align: center;
+}
+
+.product-container {
+  margin-top: 50px;
+
+  display: grid;
+
+  grid-template-columns: 1.1fr 0.9fr;
+
+  gap: 70px;
+
+  align-items: center;
+
+  text-align: left;
+}
+
+
+/* GROTE AFBEELDING */
+
+.main-image {
+  width: 100%;
+
+  height: 400px;
+
+  background: white;
+
+  border-radius: 20px;
+
+  padding: 20px;
+}
+
+.main-image img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+/* KLEINE AFBEELDINGEN */
+
+.small-images {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 15px;
+
+  margin-top: 15px;
+}
+
+.small-images img {
+  width: 100%;
+
+  height: 170px;
+
+  object-fit: contain;
+
+  background: white;
+
+  border-radius: 15px;
+
+  padding: 10px;
+
+  transition: 0.25s;
+}
+
+.small-images img:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+
+/* PRODUCT INFO */
+
+.label {
+  display: inline-block;
+
+  background: #e7ede3;
+
+  color: #567b5d;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+}
+
+.product-info h3 {
+  font-family: Georgia, serif;
+
+  font-size: 36px;
+
+  line-height: 1.2;
+
+  margin: 18px 0;
+}
+
+.product-info > p {
+  color: #5e6961;
+
+  margin-bottom: 20px;
+}
+
+.product-info ul {
+  list-style: none;
+
+  margin-bottom: 20px;
+}
+
+.product-info li {
+  margin: 9px 0;
+}
+
+.price {
+  color: #567b5d;
+
+  font-family: Georgia, serif;
+
+  font-size: 38px;
+
+  font-weight: bold;
+
+  display: inline-block;
+}
+
+.price-text {
+  display: inline-block;
+
+  margin-left: 8px;
+
+  color: #888 !important;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   QUOTE
+========================= */
+
+.quote {
+  background: #31543b;
+
+  color: white;
+
+  padding: 80px 20px;
+
+  text-align: center;
+}
+
+.quote-inner span {
+  display: block;
+
+  font-family: Georgia, serif;
+
+  font-size: 65px;
+
+  height: 55px;
+
+  opacity: .6;
+}
+
+.quote p {
+  font-family: Georgia, serif;
+
+  font-size: 34px;
+
+  max-width: 750px;
+
+  margin: auto;
+}
+
+.quote strong {
+  color: #d8c89f;
+}
+
+
+/* =========================
+   BESTELLEN
+========================= */
+
+.order {
+  max-width: 700px;
+
+  margin: auto;
+
+  padding: 100px 30px;
+
+  text-align: center;
+}
+
+.order-intro {
+  color: #5e6961;
+
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+
+  flex-direction: column;
+
+  text-align: left;
+}
+
+label {
+  margin-top: 15px;
+
+  margin-bottom: 6px;
+
+  font-weight: bold;
+
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+
+  padding: 14px;
+
+  background: white;
+
+  border: 1px solid #d6d6d0;
+
+  border-radius: 7px;
+
+  font-size: 16px;
+
+  outline: none;
+}
+
+input:focus {
+  border-color: #567b5d;
+
+  box-shadow: 0 0 0 3px rgba(86,123,93,.1);
+}
+
+button {
+  margin-top: 25px;
+
+  padding: 16px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #567b5d;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: .25s;
+}
+
+button:hover {
+  background: #3e6046;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background: #26352b;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 50px 20px;
+}
+
+.footer-logo {
+  font-size: 24px;
+
+  font-weight: bold;
+
+  margin-bottom: 8px;
+}
+
+footer p {
+  opacity: .75;
+}
+
+.copyright {
+  margin-top: 20px;
+
+  font-size: 13px;
+
+  opacity: .5;
+}
+
+
+/* =========================
+   MOBIEL
+========================= */
+
+@media (max-width: 800px) {
+
+  nav {
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  .nav-links {
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+
+    padding-top: 50px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .product-container {
+    grid-template-columns: 1fr;
+  }
+
+  .quote p {
+    font-size: 27px;
+  }
+
+}
+```
